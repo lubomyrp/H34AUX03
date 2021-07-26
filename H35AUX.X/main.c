@@ -8,6 +8,7 @@
     main.c
 
   Summary:
+ * 
     This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
   Description:
