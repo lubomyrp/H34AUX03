@@ -53,21 +53,24 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     ADC_Initialize();
+    PWM3_Initialize();
+    TMR2_Initialize();
     EXT_INT_Initialize();
+    TMR0_Initialize();
     EUSART1_Initialize();
     EUSART2_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
 {
-    // NOSC HFINTOSC; NDIV 4; 
-    OSCCON1 = 0x62;
+    // NOSC HFINTOSC; NDIV 2; 
+    OSCCON1 = 0x61;
     // CSWHOLD may proceed; SOSCPWR Low power; 
     OSCCON3 = 0x00;
     // MFOEN disabled; LFOEN disabled; ADOEN disabled; SOSCEN disabled; EXTOEN disabled; HFOEN disabled; 
     OSCEN = 0x00;
-    // HFFRQ 4_MHz; 
-    OSCFRQ = 0x02;
+    // HFFRQ 32_MHz; 
+    OSCFRQ = 0x06;
     // MFOR not ready; 
     OSCSTAT = 0x00;
     // HFTUN 0; 

@@ -1,0 +1,746 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15325 ]
+[d frameptr 6 ]
+"85 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/adc.c
+[e E6426 . `uc
+channel_ANA0 0
+channel_ANA4 4
+channel_ANA5 5
+channel_AVSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_BUF1 62
+channel_FVR_BUF2 63
+]
+"96 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
+[e E6421 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"102
+[e E6444 . `uc
+TMR2_T2INPPS 0
+TMR2_CCP1_OUT 1
+TMR2_CCP2_OUT 2
+TMR2_PWM3_OUT 3
+TMR2_PWM4_OUT 4
+TMR2_PWM5_OUT 5
+TMR2_PWM6_OUT 6
+TMR2_C1_OUT_SYNC 7
+TMR2_C2_OUT_SYNC 8
+TMR2_ZCD_OUTPUT 9
+TMR2_CLC1_OUT 10
+TMR2_CLC2_OUT 11
+TMR2_CLC3_OUT 12
+TMR2_CLC4_OUT 13
+]
+"124 C:\GitHub\H34AUX03\H35AUX.X\main.c
+[e E6538 . `uc
+channel_ANA0 0
+channel_ANA4 4
+channel_ANA5 5
+channel_AVSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_BUF1 62
+channel_FVR_BUF2 63
+]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"66 C:\GitHub\H34AUX03\H35AUX.X\main.c
+[v _T0_IH T0_IH `(v  1 e 1 0 ]
+"75
+[v _T2_IH T2_IH `(v  1 e 1 0 ]
+"86
+[v _main main `(v  1 e 1 0 ]
+"119
+[v _AdcRead AdcRead `(v  1 e 1 0 ]
+"67 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+[v i1_ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"85
+[v _ADC_SelectChannel ADC_SelectChannel `(v  1 e 1 0 ]
+"93
+[v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
+"100
+[v _ADC_IsConversionDone ADC_IsConversionDone `(a  1 e 1 0 ]
+"106
+[v _ADC_GetConversionResult ADC_GetConversionResult `(us  1 e 2 0 ]
+"66 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+"144
+[v _EUSART1_DefaultFramingErrorHandler EUSART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"146
+[v _EUSART1_DefaultOverrunErrorHandler EUSART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"154
+[v _EUSART1_DefaultErrorHandler EUSART1_DefaultErrorHandler `(v  1 e 1 0 ]
+"157
+[v _EUSART1_SetFramingErrorHandler EUSART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+"161
+[v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"165
+[v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
+"66 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart2.c
+[v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
+"144
+[v _EUSART2_DefaultFramingErrorHandler EUSART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"146
+[v _EUSART2_DefaultOverrunErrorHandler EUSART2_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"154
+[v _EUSART2_DefaultErrorHandler EUSART2_DefaultErrorHandler `(v  1 e 1 0 ]
+"157
+[v _EUSART2_SetFramingErrorHandler EUSART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+"161
+[v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"165
+[v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
+"32 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/ext_int.c
+[v _INT_ISR INT_ISR `(v  1 e 1 0 ]
+"41
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"50
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"54
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"59
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+"52 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"64
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"80
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"58 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"61 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"87
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+"121
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"132
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+"142
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"146
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"108
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"114
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+"119
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"130
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"144
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"155
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"165
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"183
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+"193
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"197
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+[s S186 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"427 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h
+[u S191 . 1 `S186 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES191  1 e 1 @11 ]
+"547
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"592
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"642
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+[s S985 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"657
+[u S992 . 1 `S985 1 . 1 0 ]
+[v _LATAbits LATAbits `VES992  1 e 1 @24 ]
+"687
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"744
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"814
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"884
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S111 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GOnDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 CHS5 1 0 :1:7 
+]
+"905
+[s S120 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CHS 1 0 :6:2 
+]
+[u S123 . 1 `S111 1 . 1 0 `S120 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES123  1 e 1 @157 ]
+"955
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1073
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"1127
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"1188
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"1258
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"1312
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+[s S323 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1338
+[u S332 . 1 `S323 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES332  1 e 1 @285 ]
+"1492
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S302 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1518
+[u S311 . 1 `S302 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES311  1 e 1 @286 ]
+"1672
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+"3758
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"3763
+[v _TMR2 TMR2 `VEuc  1 e 1 @652 ]
+"3812
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"3817
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+"3866
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S771 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"3902
+[s S775 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S783 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S787 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S796 . 1 `S771 1 . 1 0 `S775 1 . 1 0 `S783 1 . 1 0 `S787 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES796  1 e 1 @654 ]
+"4012
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+[s S672 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"4045
+[s S677 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S683 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S688 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S694 . 1 `S672 1 . 1 0 `S677 1 . 1 0 `S683 1 . 1 0 `S688 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES694  1 e 1 @655 ]
+"4140
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"4220
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+[s S737 . 1 `uc 1 RSEL 1 0 :4:0 
+]
+"4245
+[s S739 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+]
+[s S744 . 1 `uc 1 T2RSEL 1 0 :4:0 
+]
+[s S746 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+]
+[u S751 . 1 `S737 1 . 1 0 `S739 1 . 1 0 `S744 1 . 1 0 `S746 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES751  1 e 1 @657 ]
+"4773
+[v _PWM3DCL PWM3DCL `VEuc  1 e 1 @788 ]
+"4839
+[v _PWM3DCH PWM3DCH `VEuc  1 e 1 @789 ]
+"5009
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @790 ]
+"6464
+[v _TMR0L TMR0L `VEuc  1 e 1 @1436 ]
+"6602
+[v _TMR0H TMR0H `VEuc  1 e 1 @1437 ]
+"6856
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @1438 ]
+[s S913 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"6876
+[s S919 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S924 . 1 `S913 1 . 1 0 `S919 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES924  1 e 1 @1438 ]
+"6921
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @1439 ]
+[s S166 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"7782
+[u S171 . 1 `S166 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES171  1 e 1 @1804 ]
+[s S283 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 TX2IF 1 0 :1:6 
+`uc 1 RC2IF 1 0 :1:7 
+]
+"7890
+[u S291 . 1 `S283 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES291  1 e 1 @1807 ]
+[s S592 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+]
+"7936
+[u S595 . 1 `S592 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES595  1 e 1 @1808 ]
+[s S199 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"8077
+[u S204 . 1 `S199 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES204  1 e 1 @1814 ]
+[s S583 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+]
+"8225
+[u S586 . 1 `S583 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES586  1 e 1 @1818 ]
+"8353
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"8398
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"8446
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"8491
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"8541
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"8581
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"9649
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"9789
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"9829
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"9886
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"9937
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"9995
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"10979
+[v _RC2REG RC2REG `VEuc  1 e 1 @2585 ]
+"11017
+[v _TX2REG TX2REG `VEuc  1 e 1 @2586 ]
+"11062
+[v _SP2BRGL SP2BRGL `VEuc  1 e 1 @2587 ]
+"11100
+[v _SP2BRGH SP2BRGH `VEuc  1 e 1 @2588 ]
+"11138
+[v _RC2STA RC2STA `VEuc  1 e 1 @2589 ]
+"11160
+[v _RC2STAbits RC2STAbits `VES332  1 e 1 @2589 ]
+"11260
+[v _TX2STA TX2STA `VEuc  1 e 1 @2590 ]
+"11282
+[v _TX2STAbits TX2STAbits `VES311  1 e 1 @2590 ]
+"11382
+[v _BAUD2CON BAUD2CON `VEuc  1 e 1 @2591 ]
+"15830
+[v _INTPPS INTPPS `VEuc  1 e 1 @7824 ]
+"16758
+[v _RX1DTPPS RX1DTPPS `VEuc  1 e 1 @7883 ]
+"16874
+[v _RX2DTPPS RX2DTPPS `VEuc  1 e 1 @7885 ]
+"17254
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @7968 ]
+"17342
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @7970 ]
+"17430
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @7972 ]
+"17518
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"17563
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"17613
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"17658
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"17703
+[v _INLVLA INLVLA `VEuc  1 e 1 @7996 ]
+"17903
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"17953
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"18003
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"18053
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"18103
+[v _INLVLC INLVLC `VEuc  1 e 1 @8018 ]
+"53 C:\GitHub\H34AUX03\H35AUX.X\main.c
+[v _ADC_RES_pcbtype ADC_RES_pcbtype `us  1 e 2 0 ]
+"54
+[v _ADC_RES_dimmin ADC_RES_dimmin `us  1 e 2 0 ]
+[s S237 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart1.c
+[u S242 . 1 `S237 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusart1RxLastError eusart1RxLastError `VES242  1 e 1 0 ]
+"58
+[v _EUSART1_FramingErrorHandler EUSART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
+"52 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart2.c
+[v _eusart2RxLastError eusart2RxLastError `VES242  1 e 1 0 ]
+"58
+[v _EUSART2_FramingErrorHandler EUSART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART2_OverrunErrorHandler EUSART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART2_ErrorHandler EUSART2_ErrorHandler `*.37(v  1 e 2 0 ]
+"30 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/ext_int.c
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+"59 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"58 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"86 C:\GitHub\H34AUX03\H35AUX.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"115
+} 0
+"114 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+{
+"117
+} 0
+"108
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+{
+"112
+} 0
+"87 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr0.c
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+{
+"91
+} 0
+"50 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"64 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"193
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"195
+} 0
+"61 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"142
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"144
+} 0
+"58 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"80 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"55 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"112
+} 0
+"64 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"59 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/ext_int.c
+[v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"50
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"52
+} 0
+"66 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart2.c
+[v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"161
+[v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"163
+} 0
+"157
+[v _EUSART2_SetFramingErrorHandler EUSART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"159
+} 0
+"165
+[v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"167
+} 0
+"66 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"161
+[v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"163
+} 0
+"157
+[v _EUSART1_SetFramingErrorHandler EUSART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"159
+} 0
+"165
+[v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"167
+} 0
+"67 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"52 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"78
+} 0
+"165 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"167
+[v TMR2_ISR@CountCallBack CountCallBack `VEui  1 s 2 CountCallBack ]
+"181
+} 0
+"183
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+{
+"191
+} 0
+"75 C:\GitHub\H34AUX03\H35AUX.X\main.c
+[v _T2_IH T2_IH `(v  1 e 1 0 ]
+{
+"81
+} 0
+"197 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"200
+} 0
+"119 C:\GitHub\H34AUX03\H35AUX.X\main.c
+[v _AdcRead AdcRead `(v  1 e 1 0 ]
+{
+"136
+} 0
+"67 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/adc.c
+[v i1_ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"93
+[v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
+{
+"97
+} 0
+"85
+[v _ADC_SelectChannel ADC_SelectChannel `(v  1 e 1 0 ]
+{
+[v ADC_SelectChannel@channel channel `E6426  1 a 1 wreg ]
+[v ADC_SelectChannel@channel channel `E6426  1 a 1 wreg ]
+"88
+[v ADC_SelectChannel@channel channel `E6426  1 a 1 1 ]
+"91
+} 0
+"100
+[v _ADC_IsConversionDone ADC_IsConversionDone `(a  1 e 1 0 ]
+{
+"104
+} 0
+"106
+[v _ADC_GetConversionResult ADC_GetConversionResult `(us  1 e 2 0 ]
+{
+"110
+} 0
+"121 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"130
+} 0
+"132
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+{
+"140
+} 0
+"66 C:\GitHub\H34AUX03\H35AUX.X\main.c
+[v _T0_IH T0_IH `(v  1 e 1 0 ]
+{
+"72
+} 0
+"146 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr0.c
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"149
+} 0
+"32 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/ext_int.c
+[v _INT_ISR INT_ISR `(v  1 e 1 0 ]
+{
+"38
+} 0
+"41
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+{
+"48
+} 0
+"54
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"57
+} 0

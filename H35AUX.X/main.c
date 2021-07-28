@@ -47,6 +47,42 @@
 /*
                          Main application
  */
+
+/*variables*/
+/*ADC*/
+uint16_t ADC_RES_pcbtype; //pcb type adc reading result
+uint16_t ADC_RES_dimmin; //emergency dimmer inp adc reading result
+
+uint16_t i;
+
+
+/*functions prototypes*/
+
+void AdcRead(void);
+
+
+
+/*1ms timer*/
+void T0_IH(void){
+PIR0bits.TMR0IF = 0;
+
+
+
+
+};
+
+/*100ms timer*/
+void T2_IH(void){
+ PIR4bits.TMR2IF = 0;
+AdcRead();
+ IO_RA2_Toggle();
+
+
+};
+
+
+
+
 void main(void)
 {
     // initialize the device
@@ -56,10 +92,10 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_GlobalInterruptEnable();
 
     // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
+    INTERRUPT_PeripheralInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -67,11 +103,38 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
+    TMR0_SetInterruptHandler(T0_IH);
+    TMR2_SetInterruptHandler(T2_IH);            
+    TMR0_StartTimer();
+    TMR2_StartTimer();
+    
     while (1)
     {
         // Add your application code
     }
 }
+
+
+
+void AdcRead(void)
+{
+
+    /*PCB type reading start*/
+    ADC_Initialize();
+    ADC_SelectChannel(channel_ANA4);
+    ADC_StartConversion();
+    while(ADC_IsConversionDone());
+    ADC_RES_pcbtype = ADC_GetConversionResult();
+    /*PCB type reading end*/
+    
+    /*Emergency dimmer input*/
+    ADC_SelectChannel(channel_ANA5);
+    ADC_StartConversion();
+    while(ADC_IsConversionDone());
+    ADC_RES_dimmin = ADC_GetConversionResult();    
+    
+};
+
 /**
  End of File
 */
