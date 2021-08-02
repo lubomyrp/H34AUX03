@@ -47,35 +47,54 @@
 /*
                          Main application
  */
+/*INFO*/
+/*
+ 
+ ADC - 10bit
+ PWM - 10bit
+ 
+ 
+ */
+
 
 /*variables*/
 /*ADC*/
-uint16_t ADC_RES_pcbtype; //pcb type adc reading result
-uint16_t ADC_RES_dimmin; //emergency dimmer inp adc reading result
+uint16_t ADC_RES_pcbtype;       //pcb type adc reading result
+uint16_t ADC_RES_dimmin;        //emergency dimmer inp adc reading result
+uint16_t ADC_RES_dimmin_sens;   //sensor dimmer inp adc reading result
 
-uint16_t i;
+
+/*General variables*/
+uint16_t Dimm_Level;            // consolidated dimming level 
+
+uint16_t i;  //for tests
+
 
 
 /*functions prototypes*/
 
-void AdcRead(void);
 
+void AdcRead(void); //all adc reading
+void DimToPWM(void); //process dimm inout reading to PWM output
 
 
 /*1ms timer*/
 void T0_IH(void){
 PIR0bits.TMR0IF = 0;
 
-
+  
 
 
 };
 
 /*100ms timer*/
 void T2_IH(void){
- PIR4bits.TMR2IF = 0;
-AdcRead();
- IO_RA2_Toggle();
+    PIR4bits.TMR2IF = 0;
+    AdcRead();
+    
+    /*Set the dimming level based on input dimmer */
+    
+    DimToPWM();
 
 
 };
@@ -107,6 +126,7 @@ void main(void)
     TMR2_SetInterruptHandler(T2_IH);            
     TMR0_StartTimer();
     TMR2_StartTimer();
+    PWM3_Initialize();
     
     while (1)
     {
@@ -114,7 +134,23 @@ void main(void)
     }
 }
 
-
+void DimToPWM(void)
+{
+    /*Take the least dimming level*/
+    if(ADC_RES_dimmin<ADC_RES_dimmin_sens){
+        Dimm_Level=ADC_RES_dimmin;
+    
+    }else{
+    
+        //Dimm_Level=ADC_RES_dimmin_sens;
+        Dimm_Level=ADC_RES_dimmin;
+    
+    };
+    
+    /*Set the PWM level. it is same number of bits*/
+    PWM3_LoadDutyValue(Dimm_Level);
+    
+};
 
 void AdcRead(void)
 {
@@ -131,7 +167,15 @@ void AdcRead(void)
     ADC_SelectChannel(channel_ANA5);
     ADC_StartConversion();
     while(ADC_IsConversionDone());
-    ADC_RES_dimmin = ADC_GetConversionResult();    
+    ADC_RES_dimmin = ADC_GetConversionResult();   
+    
+    /*Sensor dimmer input*/
+    ADC_SelectChannel(channel_ANA2);
+    ADC_StartConversion();
+    while(ADC_IsConversionDone());
+    ADC_RES_dimmin_sens = ADC_GetConversionResult();   
+    
+    
     
 };
 

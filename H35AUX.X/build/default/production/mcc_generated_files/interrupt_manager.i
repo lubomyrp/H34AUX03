@@ -11270,6 +11270,7 @@ typedef struct
 typedef enum
 {
     channel_ANA0 = 0x0,
+    channel_ANA2 = 0x2,
     channel_ANA4 = 0x4,
     channel_ANA5 = 0x5,
     channel_AVSS = 0x3B,
@@ -11278,19 +11279,19 @@ typedef enum
     channel_FVR_BUF1 = 0x3E,
     channel_FVR_BUF2 = 0x3F
 } adc_channel_t;
-# 140 "mcc_generated_files/adc.h"
+# 141 "mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 170 "mcc_generated_files/adc.h"
+# 171 "mcc_generated_files/adc.h"
 void ADC_SelectChannel(adc_channel_t channel);
-# 197 "mcc_generated_files/adc.h"
+# 198 "mcc_generated_files/adc.h"
 void ADC_StartConversion(void);
-# 229 "mcc_generated_files/adc.h"
+# 230 "mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 262 "mcc_generated_files/adc.h"
+# 263 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 292 "mcc_generated_files/adc.h"
+# 293 "mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 320 "mcc_generated_files/adc.h"
+# 321 "mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 60 "mcc_generated_files/mcc.h" 2
 

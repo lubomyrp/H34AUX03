@@ -11269,6 +11269,7 @@ typedef struct
 typedef enum
 {
     channel_ANA0 = 0x0,
+    channel_ANA2 = 0x2,
     channel_ANA4 = 0x4,
     channel_ANA5 = 0x5,
     channel_AVSS = 0x3B,
@@ -11277,19 +11278,19 @@ typedef enum
     channel_FVR_BUF1 = 0x3E,
     channel_FVR_BUF2 = 0x3F
 } adc_channel_t;
-# 140 "./mcc_generated_files/adc.h"
+# 141 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 170 "./mcc_generated_files/adc.h"
+# 171 "./mcc_generated_files/adc.h"
 void ADC_SelectChannel(adc_channel_t channel);
-# 197 "./mcc_generated_files/adc.h"
+# 198 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(void);
-# 229 "./mcc_generated_files/adc.h"
+# 230 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 262 "./mcc_generated_files/adc.h"
+# 263 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 292 "./mcc_generated_files/adc.h"
+# 293 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 320 "./mcc_generated_files/adc.h"
+# 321 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 60 "./mcc_generated_files/mcc.h" 2
 
@@ -11365,23 +11366,24 @@ void OSCILLATOR_Initialize(void);
 # 103 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 45 "main.c" 2
-
-
-
-
-
-
-
-
+# 62 "main.c"
 uint16_t ADC_RES_pcbtype;
+uint16_t ADC_RES_dimmin;
+uint16_t ADC_RES_dimmin_sens;
+
+
+
+uint16_t Dimm_Level;
 
 uint16_t i;
 
 
 
 
-void AdcRead(void);
 
+
+void AdcRead(void);
+void DimToPWM(void);
 
 
 
@@ -11395,9 +11397,12 @@ PIR0bits.TMR0IF = 0;
 
 
 void T2_IH(void){
- PIR4bits.TMR2IF = 0;
-AdcRead();
- do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0);
+    PIR4bits.TMR2IF = 0;
+    AdcRead();
+
+
+
+    DimToPWM();
 
 
 };
@@ -11429,6 +11434,7 @@ void main(void)
     TMR2_SetInterruptHandler(T2_IH);
     TMR0_StartTimer();
     TMR2_StartTimer();
+    PWM3_Initialize();
 
     while (1)
     {
@@ -11436,7 +11442,23 @@ void main(void)
     }
 }
 
+void DimToPWM(void)
+{
 
+    if(ADC_RES_dimmin<ADC_RES_dimmin_sens){
+        Dimm_Level=ADC_RES_dimmin;
+
+    }else{
+
+
+        Dimm_Level=ADC_RES_dimmin;
+
+    };
+
+
+    PWM3_LoadDutyValue(Dimm_Level);
+
+};
 
 void AdcRead(void)
 {
@@ -11447,6 +11469,19 @@ void AdcRead(void)
     ADC_StartConversion();
     while(ADC_IsConversionDone());
     ADC_RES_pcbtype = ADC_GetConversionResult();
+
+
+
+    ADC_SelectChannel(channel_ANA5);
+    ADC_StartConversion();
+    while(ADC_IsConversionDone());
+    ADC_RES_dimmin = ADC_GetConversionResult();
+
+
+    ADC_SelectChannel(channel_ANA2);
+    ADC_StartConversion();
+    while(ADC_IsConversionDone());
+    ADC_RES_dimmin_sens = ADC_GetConversionResult();
 
 
 

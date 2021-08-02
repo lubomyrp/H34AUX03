@@ -85,25 +85,25 @@
 #define channel_ANA0_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
 #define channel_ANA0_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
 
-// get/set IO_RA2 aliases
-#define IO_RA2_TRIS                 TRISAbits.TRISA2
-#define IO_RA2_LAT                  LATAbits.LATA2
-#define IO_RA2_PORT                 PORTAbits.RA2
-#define IO_RA2_WPU                  WPUAbits.WPUA2
-#define IO_RA2_OD                   ODCONAbits.ODCA2
-#define IO_RA2_ANS                  ANSELAbits.ANSA2
-#define IO_RA2_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
-#define IO_RA2_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
-#define IO_RA2_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
-#define IO_RA2_GetValue()           PORTAbits.RA2
-#define IO_RA2_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
-#define IO_RA2_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
-#define IO_RA2_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
-#define IO_RA2_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
-#define IO_RA2_SetPushPull()        do { ODCONAbits.ODCA2 = 0; } while(0)
-#define IO_RA2_SetOpenDrain()       do { ODCONAbits.ODCA2 = 1; } while(0)
-#define IO_RA2_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
-#define IO_RA2_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
+// get/set channel_ANA2 aliases
+#define channel_ANA2_TRIS                 TRISAbits.TRISA2
+#define channel_ANA2_LAT                  LATAbits.LATA2
+#define channel_ANA2_PORT                 PORTAbits.RA2
+#define channel_ANA2_WPU                  WPUAbits.WPUA2
+#define channel_ANA2_OD                   ODCONAbits.ODCA2
+#define channel_ANA2_ANS                  ANSELAbits.ANSA2
+#define channel_ANA2_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
+#define channel_ANA2_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
+#define channel_ANA2_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
+#define channel_ANA2_GetValue()           PORTAbits.RA2
+#define channel_ANA2_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
+#define channel_ANA2_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
+#define channel_ANA2_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
+#define channel_ANA2_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
+#define channel_ANA2_SetPushPull()        do { ODCONAbits.ODCA2 = 0; } while(0)
+#define channel_ANA2_SetOpenDrain()       do { ODCONAbits.ODCA2 = 1; } while(0)
+#define channel_ANA2_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
+#define channel_ANA2_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
 
 // get/set channel_ANA4 aliases
 #define channel_ANA4_TRIS                 TRISAbits.TRISA4

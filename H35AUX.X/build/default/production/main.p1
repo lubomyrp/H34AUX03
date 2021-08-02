@@ -21,20 +21,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7936
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h: 7936: extern volatile PIR4bits_t PIR4bits __attribute__((address(0x710)));
 [v _PIR4bits `VS383 ~T0 @X0 0 e@1808 ]
-"60 main.c
-[; ;main.c: 60: void AdcRead(void);
+"77 main.c
+[; ;main.c: 77: void AdcRead(void);
 [v _AdcRead `(v ~T0 @X0 0 ef ]
-"648 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h: 648:     struct {
-[s S41 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S41 . LATA0 LATA1 LATA2 . LATA4 LATA5 ]
-"647
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h: 647: typedef union {
-[u S40 `S41 1 ]
-[n S40 . . ]
-"657
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h: 657: extern volatile LATAbits_t LATAbits __attribute__((address(0x018)));
-[v _LATAbits `VS40 ~T0 @X0 0 e@24 ]
+"78
+[; ;main.c: 78: void DimToPWM(void);
+[v _DimToPWM `(v ~T0 @X0 0 ef ]
 [p mainexit ]
 "77 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 77: void SYSTEM_Initialize(void);
@@ -64,24 +56,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 "451 ./mcc_generated_files/tmr2.h
 [; ;./mcc_generated_files/tmr2.h: 451: void TMR2_StartTimer(void);
 [v _TMR2_StartTimer `(v ~T0 @X0 0 ef ]
-"140 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 140: void ADC_Initialize(void);
+"102 ./mcc_generated_files/pwm3.h
+[; ;./mcc_generated_files/pwm3.h: 102:  void PWM3_Initialize(void);
+[v _PWM3_Initialize `(v ~T0 @X0 0 ef ]
+"129
+[; ;./mcc_generated_files/pwm3.h: 129:  void PWM3_LoadDutyValue(uint16_t dutyValue);
+[v _PWM3_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
+"141 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 141: void ADC_Initialize(void);
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
-"123 main.c
-[; ;main.c: 123:     ADC_SelectChannel(channel_ANA4);
-[c E6538 0 4 5 59 60 61 62 63 .. ]
-[n E6538 . channel_ANA0 channel_ANA4 channel_ANA5 channel_AVSS channel_Temp channel_DAC1 channel_FVR_BUF1 channel_FVR_BUF2  ]
-"170 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 170: void ADC_SelectChannel(adc_channel_t channel);
+"160 main.c
+[; ;main.c: 160:     ADC_SelectChannel(channel_ANA4);
+[c E6538 0 2 4 5 59 60 61 62 63 .. ]
+[n E6538 . channel_ANA0 channel_ANA2 channel_ANA4 channel_ANA5 channel_AVSS channel_Temp channel_DAC1 channel_FVR_BUF1 channel_FVR_BUF2  ]
+"171 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 171: void ADC_SelectChannel(adc_channel_t channel);
 [v _ADC_SelectChannel `(v ~T0 @X0 0 ef1`E6538 ]
-"197
-[; ;./mcc_generated_files/adc.h: 197: void ADC_StartConversion(void);
+"198
+[; ;./mcc_generated_files/adc.h: 198: void ADC_StartConversion(void);
 [v _ADC_StartConversion `(v ~T0 @X0 0 ef ]
-"229
-[; ;./mcc_generated_files/adc.h: 229: _Bool ADC_IsConversionDone(void);
+"230
+[; ;./mcc_generated_files/adc.h: 230: _Bool ADC_IsConversionDone(void);
 [v _ADC_IsConversionDone `(a ~T0 @X0 0 ef ]
-"262
-[; ;./mcc_generated_files/adc.h: 262: adc_result_t ADC_GetConversionResult(void);
+"263
+[; ;./mcc_generated_files/adc.h: 263: adc_result_t ADC_GetConversionResult(void);
 [v _ADC_GetConversionResult `(us ~T0 @X0 0 ef ]
 "111 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h: 111: __asm("INDF0 equ 00h");
@@ -1004,122 +1002,197 @@ Version 4.0 HI-TECH Software Intermediate Code
 "18613
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h: 18613: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"53 main.c
-[; ;main.c: 53: uint16_t ADC_RES_pcbtype;
+"62 main.c
+[; ;main.c: 62: uint16_t ADC_RES_pcbtype;
 [v _ADC_RES_pcbtype `us ~T0 @X0 1 e ]
-"55
-[; ;main.c: 55: uint16_t i;
+"63
+[; ;main.c: 63: uint16_t ADC_RES_dimmin;
+[v _ADC_RES_dimmin `us ~T0 @X0 1 e ]
+"64
+[; ;main.c: 64: uint16_t ADC_RES_dimmin_sens;
+[v _ADC_RES_dimmin_sens `us ~T0 @X0 1 e ]
+"68
+[; ;main.c: 68: uint16_t Dimm_Level;
+[v _Dimm_Level `us ~T0 @X0 1 e ]
+"70
+[; ;main.c: 70: uint16_t i;
 [v _i `us ~T0 @X0 1 e ]
-"65
-[; ;main.c: 65: void T0_IH(void){
+"82
+[; ;main.c: 82: void T0_IH(void){
 [v _T0_IH `(v ~T0 @X0 1 ef ]
 {
 [e :U _T0_IH ]
 [f ]
-"66
-[; ;main.c: 66: PIR0bits.TMR0IF = 0;
+"83
+[; ;main.c: 83: PIR0bits.TMR0IF = 0;
 [e = . . _PIR0bits 0 3 -> -> 0 `i `uc ]
-"71
-[; ;main.c: 71: };
+"88
+[; ;main.c: 88: };
 [e :UE 878 ]
 }
-"74
-[; ;main.c: 74: void T2_IH(void){
+"91
+[; ;main.c: 91: void T2_IH(void){
 [v _T2_IH `(v ~T0 @X0 1 ef ]
 {
 [e :U _T2_IH ]
 [f ]
-"75
-[; ;main.c: 75:  PIR4bits.TMR2IF = 0;
+"92
+[; ;main.c: 92:     PIR4bits.TMR2IF = 0;
 [e = . . _PIR4bits 0 1 -> -> 0 `i `uc ]
-"76
-[; ;main.c: 76: AdcRead();
+"93
+[; ;main.c: 93:     AdcRead();
 [e ( _AdcRead ..  ]
-"77
-[; ;main.c: 77:  do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0);
-[e :U 882 ]
-{
-[e = . . _LATAbits 0 2 -> ~ -> . . _LATAbits 0 2 `i `uc ]
-}
-[e :U 881 ]
-"80
-[; ;main.c: 80: };
+"97
+[; ;main.c: 97:     DimToPWM();
+[e ( _DimToPWM ..  ]
+"100
+[; ;main.c: 100: };
 [e :UE 879 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"85
-[; ;main.c: 85: void main(void)
+"105
+[; ;main.c: 105: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"86
-[; ;main.c: 86: {
+"106
+[; ;main.c: 106: {
 {
 [e :U _main ]
 [f ]
-"88
-[; ;main.c: 88:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"94
-[; ;main.c: 94:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"97
-[; ;main.c: 97:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"105
-[; ;main.c: 105:     TMR0_SetInterruptHandler(T0_IH);
-[e ( _TMR0_SetInterruptHandler (1 &U _T0_IH ]
-"106
-[; ;main.c: 106:     TMR2_SetInterruptHandler(T2_IH);
-[e ( _TMR2_SetInterruptHandler (1 &U _T2_IH ]
-"107
-[; ;main.c: 107:     TMR0_StartTimer();
-[e ( _TMR0_StartTimer ..  ]
 "108
-[; ;main.c: 108:     TMR2_StartTimer();
-[e ( _TMR2_StartTimer ..  ]
-"110
-[; ;main.c: 110:     while (1)
-[e :U 885 ]
-"111
-[; ;main.c: 111:     {
-{
-"113
-[; ;main.c: 113:     }
-}
-[e :U 884 ]
-[e $U 885  ]
-[e :U 886 ]
+[; ;main.c: 108:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
 "114
-[; ;main.c: 114: }
-[e :UE 883 ]
+[; ;main.c: 114:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"117
+[; ;main.c: 117:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
+"125
+[; ;main.c: 125:     TMR0_SetInterruptHandler(T0_IH);
+[e ( _TMR0_SetInterruptHandler (1 &U _T0_IH ]
+"126
+[; ;main.c: 126:     TMR2_SetInterruptHandler(T2_IH);
+[e ( _TMR2_SetInterruptHandler (1 &U _T2_IH ]
+"127
+[; ;main.c: 127:     TMR0_StartTimer();
+[e ( _TMR0_StartTimer ..  ]
+"128
+[; ;main.c: 128:     TMR2_StartTimer();
+[e ( _TMR2_StartTimer ..  ]
+"129
+[; ;main.c: 129:     PWM3_Initialize();
+[e ( _PWM3_Initialize ..  ]
+"131
+[; ;main.c: 131:     while (1)
+[e :U 882 ]
+"132
+[; ;main.c: 132:     {
+{
+"134
+[; ;main.c: 134:     }
 }
-"118
-[; ;main.c: 118: void AdcRead(void)
+[e :U 881 ]
+[e $U 882  ]
+[e :U 883 ]
+"135
+[; ;main.c: 135: }
+[e :UE 880 ]
+}
+"137
+[; ;main.c: 137: void DimToPWM(void)
+[v _DimToPWM `(v ~T0 @X0 1 ef ]
+"138
+[; ;main.c: 138: {
+{
+[e :U _DimToPWM ]
+[f ]
+"140
+[; ;main.c: 140:     if(ADC_RES_dimmin<ADC_RES_dimmin_sens){
+[e $ ! < -> _ADC_RES_dimmin `ui -> _ADC_RES_dimmin_sens `ui 885  ]
+{
+"141
+[; ;main.c: 141:         Dimm_Level=ADC_RES_dimmin;
+[e = _Dimm_Level _ADC_RES_dimmin ]
+"143
+[; ;main.c: 143:     }else{
+}
+[e $U 886  ]
+[e :U 885 ]
+{
+"146
+[; ;main.c: 146:         Dimm_Level=ADC_RES_dimmin;
+[e = _Dimm_Level _ADC_RES_dimmin ]
+"148
+[; ;main.c: 148:     };
+}
+[e :U 886 ]
+"151
+[; ;main.c: 151:     PWM3_LoadDutyValue(Dimm_Level);
+[e ( _PWM3_LoadDutyValue (1 _Dimm_Level ]
+"153
+[; ;main.c: 153: };
+[e :UE 884 ]
+}
+"155
+[; ;main.c: 155: void AdcRead(void)
 [v _AdcRead `(v ~T0 @X0 1 ef ]
-"119
-[; ;main.c: 119: {
+"156
+[; ;main.c: 156: {
 {
 [e :U _AdcRead ]
 [f ]
-"122
-[; ;main.c: 122:     ADC_Initialize();
+"159
+[; ;main.c: 159:     ADC_Initialize();
 [e ( _ADC_Initialize ..  ]
-"123
-[; ;main.c: 123:     ADC_SelectChannel(channel_ANA4);
-[e ( _ADC_SelectChannel (1 . `E6538 1 ]
-"124
-[; ;main.c: 124:     ADC_StartConversion();
+"160
+[; ;main.c: 160:     ADC_SelectChannel(channel_ANA4);
+[e ( _ADC_SelectChannel (1 . `E6538 2 ]
+"161
+[; ;main.c: 161:     ADC_StartConversion();
 [e ( _ADC_StartConversion ..  ]
-"125
-[; ;main.c: 125:     while(ADC_IsConversionDone());
+"162
+[; ;main.c: 162:     while(ADC_IsConversionDone());
 [e $U 888  ]
 [e :U 889 ]
 [e :U 888 ]
 [e $ != -> ( _ADC_IsConversionDone ..  `i -> 0 `i 889  ]
 [e :U 890 ]
-"126
-[; ;main.c: 126:     ADC_RES_pcbtype = ADC_GetConversionResult();
+"163
+[; ;main.c: 163:     ADC_RES_pcbtype = ADC_GetConversionResult();
 [e = _ADC_RES_pcbtype ( _ADC_GetConversionResult ..  ]
-"130
-[; ;main.c: 130: };
+"167
+[; ;main.c: 167:     ADC_SelectChannel(channel_ANA5);
+[e ( _ADC_SelectChannel (1 . `E6538 3 ]
+"168
+[; ;main.c: 168:     ADC_StartConversion();
+[e ( _ADC_StartConversion ..  ]
+"169
+[; ;main.c: 169:     while(ADC_IsConversionDone());
+[e $U 891  ]
+[e :U 892 ]
+[e :U 891 ]
+[e $ != -> ( _ADC_IsConversionDone ..  `i -> 0 `i 892  ]
+[e :U 893 ]
+"170
+[; ;main.c: 170:     ADC_RES_dimmin = ADC_GetConversionResult();
+[e = _ADC_RES_dimmin ( _ADC_GetConversionResult ..  ]
+"173
+[; ;main.c: 173:     ADC_SelectChannel(channel_ANA2);
+[e ( _ADC_SelectChannel (1 . `E6538 1 ]
+"174
+[; ;main.c: 174:     ADC_StartConversion();
+[e ( _ADC_StartConversion ..  ]
+"175
+[; ;main.c: 175:     while(ADC_IsConversionDone());
+[e $U 894  ]
+[e :U 895 ]
+[e :U 894 ]
+[e $ != -> ( _ADC_IsConversionDone ..  `i -> 0 `i 895  ]
+[e :U 896 ]
+"176
+[; ;main.c: 176:     ADC_RES_dimmin_sens = ADC_GetConversionResult();
+[e = _ADC_RES_dimmin_sens ( _ADC_GetConversionResult ..  ]
+"180
+[; ;main.c: 180: };
 [e :UE 887 ]
 }
