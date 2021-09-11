@@ -11231,12 +11231,19 @@ extern void (*TMR0_InterruptHandler)(void);
 void TMR0_DefaultInterruptHandler(void);
 # 57 "mcc_generated_files/mcc.h" 2
 
+# 1 "mcc_generated_files/fvr.h" 1
+# 93 "mcc_generated_files/fvr.h"
+ void FVR_Initialize(void);
+# 127 "mcc_generated_files/fvr.h"
+_Bool FVR_IsOutputReady(void);
+# 58 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/pwm3.h" 1
 # 102 "mcc_generated_files/pwm3.h"
  void PWM3_Initialize(void);
 # 129 "mcc_generated_files/pwm3.h"
  void PWM3_LoadDutyValue(uint16_t dutyValue);
-# 58 "mcc_generated_files/mcc.h" 2
+# 59 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/ext_int.h" 1
 # 250 "mcc_generated_files/ext_int.h"
@@ -11251,7 +11258,7 @@ void INT_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT_InterruptHandler)(void);
 # 367 "mcc_generated_files/ext_int.h"
 void INT_DefaultInterruptHandler(void);
-# 59 "mcc_generated_files/mcc.h" 2
+# 60 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/adc.h" 1
 # 72 "mcc_generated_files/adc.h"
@@ -11292,7 +11299,7 @@ adc_result_t ADC_GetConversionResult(void);
 adc_result_t ADC_GetConversion(adc_channel_t channel);
 # 321 "mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
-# 60 "mcc_generated_files/mcc.h" 2
+# 61 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/eusart2.h" 1
 # 75 "mcc_generated_files/eusart2.h"
@@ -11325,7 +11332,7 @@ void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "mcc_generated_files/eusart2.h"
 void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
-# 61 "mcc_generated_files/mcc.h" 2
+# 62 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/eusart1.h" 1
 # 75 "mcc_generated_files/eusart1.h"
@@ -11358,12 +11365,12 @@ void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "mcc_generated_files/eusart1.h"
 void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 62 "mcc_generated_files/mcc.h" 2
-# 77 "mcc_generated_files/mcc.h"
+# 63 "mcc_generated_files/mcc.h" 2
+# 78 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 90 "mcc_generated_files/mcc.h"
+# 91 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 103 "mcc_generated_files/mcc.h"
+# 104 "mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 47 "mcc_generated_files/mcc.c" 2
 
@@ -11374,6 +11381,7 @@ void SYSTEM_Initialize(void)
     PMD_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
+    FVR_Initialize();
     ADC_Initialize();
     PWM3_Initialize();
     TMR2_Initialize();

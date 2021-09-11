@@ -137,13 +137,13 @@ void main(void)
 void DimToPWM(void)
 {
     /*Take the least dimming level*/
-    if(ADC_RES_dimmin<ADC_RES_dimmin_sens){
+    if(ADC_RES_dimmin<=ADC_RES_dimmin_sens){
         Dimm_Level=ADC_RES_dimmin;
     
     }else{
     
         //Dimm_Level=ADC_RES_dimmin_sens;
-        Dimm_Level=ADC_RES_dimmin;
+        Dimm_Level=ADC_RES_dimmin_sens;
     
     };
     

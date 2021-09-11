@@ -28,8 +28,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 78: void DimToPWM(void);
 [v _DimToPWM `(v ~T0 @X0 0 ef ]
 [p mainexit ]
-"77 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 77: void SYSTEM_Initialize(void);
+"78 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 78: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "420 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h: 420:     struct {
@@ -67,11 +67,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
 "160 main.c
 [; ;main.c: 160:     ADC_SelectChannel(channel_ANA4);
-[c E6538 0 2 4 5 59 60 61 62 63 .. ]
-[n E6538 . channel_ANA0 channel_ANA2 channel_ANA4 channel_ANA5 channel_AVSS channel_Temp channel_DAC1 channel_FVR_BUF1 channel_FVR_BUF2  ]
+[c E6540 0 2 4 5 59 60 61 62 63 .. ]
+[n E6540 . channel_ANA0 channel_ANA2 channel_ANA4 channel_ANA5 channel_AVSS channel_Temp channel_DAC1 channel_FVR_BUF1 channel_FVR_BUF2  ]
 "171 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 171: void ADC_SelectChannel(adc_channel_t channel);
-[v _ADC_SelectChannel `(v ~T0 @X0 0 ef1`E6538 ]
+[v _ADC_SelectChannel `(v ~T0 @X0 0 ef1`E6540 ]
 "198
 [; ;./mcc_generated_files/adc.h: 198: void ADC_StartConversion(void);
 [v _ADC_StartConversion `(v ~T0 @X0 0 ef ]
@@ -1107,8 +1107,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _DimToPWM ]
 [f ]
 "140
-[; ;main.c: 140:     if(ADC_RES_dimmin<ADC_RES_dimmin_sens){
-[e $ ! < -> _ADC_RES_dimmin `ui -> _ADC_RES_dimmin_sens `ui 885  ]
+[; ;main.c: 140:     if(ADC_RES_dimmin<=ADC_RES_dimmin_sens){
+[e $ ! <= -> _ADC_RES_dimmin `ui -> _ADC_RES_dimmin_sens `ui 885  ]
 {
 "141
 [; ;main.c: 141:         Dimm_Level=ADC_RES_dimmin;
@@ -1120,8 +1120,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 885 ]
 {
 "146
-[; ;main.c: 146:         Dimm_Level=ADC_RES_dimmin;
-[e = _Dimm_Level _ADC_RES_dimmin ]
+[; ;main.c: 146:         Dimm_Level=ADC_RES_dimmin_sens;
+[e = _Dimm_Level _ADC_RES_dimmin_sens ]
 "148
 [; ;main.c: 148:     };
 }
@@ -1146,7 +1146,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _ADC_Initialize ..  ]
 "160
 [; ;main.c: 160:     ADC_SelectChannel(channel_ANA4);
-[e ( _ADC_SelectChannel (1 . `E6538 2 ]
+[e ( _ADC_SelectChannel (1 . `E6540 2 ]
 "161
 [; ;main.c: 161:     ADC_StartConversion();
 [e ( _ADC_StartConversion ..  ]
@@ -1162,7 +1162,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _ADC_RES_pcbtype ( _ADC_GetConversionResult ..  ]
 "167
 [; ;main.c: 167:     ADC_SelectChannel(channel_ANA5);
-[e ( _ADC_SelectChannel (1 . `E6538 3 ]
+[e ( _ADC_SelectChannel (1 . `E6540 3 ]
 "168
 [; ;main.c: 168:     ADC_StartConversion();
 [e ( _ADC_StartConversion ..  ]
@@ -1178,7 +1178,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _ADC_RES_dimmin ( _ADC_GetConversionResult ..  ]
 "173
 [; ;main.c: 173:     ADC_SelectChannel(channel_ANA2);
-[e ( _ADC_SelectChannel (1 . `E6538 1 ]
+[e ( _ADC_SelectChannel (1 . `E6540 1 ]
 "174
 [; ;main.c: 174:     ADC_StartConversion();
 [e ( _ADC_StartConversion ..  ]

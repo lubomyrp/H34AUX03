@@ -938,8 +938,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _PWM3_Initialize ]
 [f ]
 "62
-[; ;mcc_generated_files/pwm3.c: 62:     PWM3CON = 0x80;
-[e = _PWM3CON -> -> 128 `i `uc ]
+[; ;mcc_generated_files/pwm3.c: 62:     PWM3CON = 0x90;
+[e = _PWM3CON -> -> 144 `i `uc ]
 "65
 [; ;mcc_generated_files/pwm3.c: 65:     PWM3DCH = 0x7F;
 [e = _PWM3DCH -> -> 127 `i `uc ]

@@ -64,7 +64,7 @@ intentry CODE 0 4 4 2D 2
 bssBANK0 BANK0 1 32 32 8 1
 bssCOMMON COMMON 1 70 70 8 1
 config CONFIG 4 8007 8007 5 2
-$C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
+$C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 31 31 2 2
 config CONFIG 4 8007 8007 5 2
@@ -192,29 +192,29 @@ STRING 283-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\H35AUX.X.debug.o
-33 cinit CODE >7777:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-33 cinit CODE >7780:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-33 cinit CODE >7819:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-34 cinit CODE >7820:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-35 cinit CODE >7821:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-36 cinit CODE >7822:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-37 cinit CODE >7823:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-38 cinit CODE >7824:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-39 cinit CODE >7825:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-3A cinit CODE >7826:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-3B cinit CODE >7830:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-3C cinit CODE >7831:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-3D cinit CODE >7832:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-3E cinit CODE >7833:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-3F cinit CODE >7834:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-40 cinit CODE >7835:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-41 cinit CODE >7836:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-42 cinit CODE >7837:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-43 cinit CODE >7838:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-44 cinit CODE >7844:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-44 cinit CODE >7846:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-45 cinit CODE >7847:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
-46 cinit CODE >7848:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.s
+33 cinit CODE >7777:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+33 cinit CODE >7780:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+33 cinit CODE >7819:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+34 cinit CODE >7820:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+35 cinit CODE >7821:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+36 cinit CODE >7822:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+37 cinit CODE >7823:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+38 cinit CODE >7824:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+39 cinit CODE >7825:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+3A cinit CODE >7826:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+3B cinit CODE >7830:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+3C cinit CODE >7831:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+3D cinit CODE >7832:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+3E cinit CODE >7833:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+3F cinit CODE >7834:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+40 cinit CODE >7835:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+41 cinit CODE >7836:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+42 cinit CODE >7837:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+43 cinit CODE >7838:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+44 cinit CODE >7844:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+44 cinit CODE >7846:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+45 cinit CODE >7847:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
+46 cinit CODE >7848:C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.s
 4 intentry CODE >52:C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/interrupt_manager.c
 F intentry CODE >57:C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/interrupt_manager.c
@@ -522,10 +522,10 @@ _T2PR 28D 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 _TMR2 28C 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 _WPUA 1F39 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 _WPUC 1F4F 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
+___sp 0 0 STACK 2 stack C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
 _main 246 0 CODE 0 maintext dist/default/debug\H35AUX.X.debug.o
 btemp 7E 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
-start 62 0 CODE 0 init C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
+start 62 0 CODE 0 init C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
 EUSART2_SetOverrunErrorHandler@interruptHandler 3A 0 BANK0 1 cstackBANK0 dist/default/debug\H35AUX.X.debug.o
 _TMR0_InterruptHandler 20 0 BANK0 1 nvBANK0 dist/default/debug\H35AUX.X.debug.o
 __end_of_PWM3_LoadDutyValue 2E2 0 CODE 0 text31 dist/default/debug\H35AUX.X.debug.o
@@ -543,12 +543,12 @@ _TMR2_StartTimer 4D8 0 CODE 0 text1 dist/default/debug\H35AUX.X.debug.o
 _ADC_StartConversion 4F4 0 CODE 0 text34 dist/default/debug\H35AUX.X.debug.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 TMR0_SetInterruptHandler@InterruptHandler 3A 0 BANK0 1 cstackBANK0 dist/default/debug\H35AUX.X.debug.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
 __size_of_EUSART1_SetErrorHandler 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 __size_of_INT_CallBack 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
@@ -590,8 +590,8 @@ __size_of_EUSART2_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/debug\H35AUX.X
 _INLVLA 1F3C 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 _INLVLC 1F52 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 _INTPPS 1E90 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
-___stackhi 23EF 0 ABS 0 - C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
-___stacklo 201C 0 ABS 0 - C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
+___stackhi 23EF 0 ABS 0 - C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
+___stacklo 201C 0 ABS 0 - C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
 __end_of_AdcRead 11E 0 CODE 0 text32 dist/default/debug\H35AUX.X.debug.o
 __size_of_T0_IH 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 __size_of_T2_IH 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
@@ -631,7 +631,7 @@ _EUSART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/debug\H35AUX.X.debu
 TMR2_SetInterruptHandler@InterruptHandler 3A 0 BANK0 1 cstackBANK0 dist/default/debug\H35AUX.X.debug.o
 __size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
 __size_of_DimToPWM 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o
-___int_sp 0 0 STACK 2 stack C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
+___int_sp 0 0 STACK 2 stack C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
 __end_of_PWM3_Initialize 40A 0 CODE 0 text9 dist/default/debug\H35AUX.X.debug.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -896,7 +896,7 @@ _TMR2_CallBack 352 0 CODE 0 text27 dist/default/debug\H35AUX.X.debug.o
 _ADC_GetConversionResult 4B4 0 CODE 0 text37 dist/default/debug\H35AUX.X.debug.o
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsoc4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\LYUBOM~1.PAS\AppData\Local\Temp\xcAsbqg.o
 __end_of_ADC_GetConversionResult 4C0 0 CODE 0 text37 dist/default/debug\H35AUX.X.debug.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __size_of_EUSART2_Initialize 0 0 ABS 0 - dist/default/debug\H35AUX.X.debug.o

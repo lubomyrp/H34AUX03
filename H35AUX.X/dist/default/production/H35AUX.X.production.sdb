@@ -57,7 +57,7 @@ TMR2_CLC3_OUT 12
 TMR2_CLC4_OUT 13
 ]
 "160 C:\GitHub\H34AUX03\H35AUX.X\main.c
-[e E6538 . `uc
+[e E6540 . `uc
 channel_ANA0 0
 channel_ANA2 2
 channel_ANA4 4
@@ -131,13 +131,15 @@ channel_FVR_BUF2 63
 [v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
 "59
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
+"58 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
 "52 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 "50 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"64
+"65
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"80
+"81
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
@@ -179,14 +181,14 @@ channel_FVR_BUF2 63
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 "197
 [v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
-[s S187 . 1 `uc 1 INTEDG 1 0 :1:0 
+[s S191 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
 "427 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8\pic\include\proc\pic16f15325.h
-[u S192 . 1 `S187 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES192  1 e 1 @11 ]
+[u S196 . 1 `S191 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES196  1 e 1 @11 ]
 "547
 [v _TRISA TRISA `VEuc  1 e 1 @18 ]
 "592
@@ -201,7 +203,7 @@ channel_FVR_BUF2 63
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
 "884
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
-[s S112 . 1 `uc 1 ADON 1 0 :1:0 
+[s S116 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GOnDONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -211,11 +213,11 @@ channel_FVR_BUF2 63
 `uc 1 CHS5 1 0 :1:7 
 ]
 "905
-[s S121 . 1 `uc 1 . 1 0 :2:0 
+[s S125 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CHS 1 0 :6:2 
 ]
-[u S124 . 1 `S112 1 . 1 0 `S121 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES124  1 e 1 @157 ]
+[u S128 . 1 `S116 1 . 1 0 `S125 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES128  1 e 1 @157 ]
 "955
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
 "1073
@@ -228,7 +230,7 @@ channel_FVR_BUF2 63
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
 "1312
 [v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
-[s S324 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S328 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -238,11 +240,11 @@ channel_FVR_BUF2 63
 `uc 1 SPEN 1 0 :1:7 
 ]
 "1338
-[u S333 . 1 `S324 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES333  1 e 1 @285 ]
+[u S337 . 1 `S328 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES337  1 e 1 @285 ]
 "1492
 [v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
-[s S303 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S307 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -252,8 +254,8 @@ channel_FVR_BUF2 63
 `uc 1 CSRC 1 0 :1:7 
 ]
 "1518
-[u S312 . 1 `S303 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES312  1 e 1 @286 ]
+[u S316 . 1 `S307 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES316  1 e 1 @286 ]
 "1672
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
 "3758
@@ -266,12 +268,12 @@ channel_FVR_BUF2 63
 [v _PR2 PR2 `VEuc  1 e 1 @653 ]
 "3866
 [v _T2CON T2CON `VEuc  1 e 1 @654 ]
-[s S772 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S776 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "3902
-[s S776 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S780 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -279,11 +281,11 @@ channel_FVR_BUF2 63
 `uc 1 CKPS1 1 0 :1:5 
 `uc 1 CKPS2 1 0 :1:6 
 ]
-[s S784 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S788 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
-[s S788 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S792 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -292,56 +294,56 @@ channel_FVR_BUF2 63
 `uc 1 T2CKPS2 1 0 :1:6 
 `uc 1 TMR2ON 1 0 :1:7 
 ]
-[u S797 . 1 `S772 1 . 1 0 `S776 1 . 1 0 `S784 1 . 1 0 `S788 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES797  1 e 1 @654 ]
+[u S801 . 1 `S776 1 . 1 0 `S780 1 . 1 0 `S788 1 . 1 0 `S792 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES801  1 e 1 @654 ]
 "4012
 [v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
-[s S673 . 1 `uc 1 MODE 1 0 :5:0 
+[s S677 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "4045
-[s S678 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S682 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
-[s S684 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S688 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CKSYNC 1 0 :1:5 
 `uc 1 T2CKPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
-[s S689 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S693 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
-[u S695 . 1 `S673 1 . 1 0 `S678 1 . 1 0 `S684 1 . 1 0 `S689 1 . 1 0 ]
-[v _T2HLTbits T2HLTbits `VES695  1 e 1 @655 ]
+[u S699 . 1 `S677 1 . 1 0 `S682 1 . 1 0 `S688 1 . 1 0 `S693 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES699  1 e 1 @655 ]
 "4140
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
 "4220
 [v _T2RST T2RST `VEuc  1 e 1 @657 ]
-[s S738 . 1 `uc 1 RSEL 1 0 :4:0 
+[s S742 . 1 `uc 1 RSEL 1 0 :4:0 
 ]
 "4245
-[s S740 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S744 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 ]
-[s S745 . 1 `uc 1 T2RSEL 1 0 :4:0 
+[s S749 . 1 `uc 1 T2RSEL 1 0 :4:0 
 ]
-[s S747 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S751 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 ]
-[u S752 . 1 `S738 1 . 1 0 `S740 1 . 1 0 `S745 1 . 1 0 `S747 1 . 1 0 ]
-[v _T2RSTbits T2RSTbits `VES752  1 e 1 @657 ]
+[u S756 . 1 `S742 1 . 1 0 `S744 1 . 1 0 `S749 1 . 1 0 `S751 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES756  1 e 1 @657 ]
 "4773
 [v _PWM3DCL PWM3DCL `VEuc  1 e 1 @788 ]
 "4839
@@ -354,31 +356,31 @@ channel_FVR_BUF2 63
 [v _TMR0H TMR0H `VEuc  1 e 1 @1437 ]
 "6856
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @1438 ]
-[s S914 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S918 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T016BIT 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "6876
-[s S920 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+[s S924 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
 `uc 1 T0OUTPS1 1 0 :1:1 
 `uc 1 T0OUTPS2 1 0 :1:2 
 `uc 1 T0OUTPS3 1 0 :1:3 
 ]
-[u S925 . 1 `S914 1 . 1 0 `S920 1 . 1 0 ]
-[v _T0CON0bits T0CON0bits `VES925  1 e 1 @1438 ]
+[u S929 . 1 `S918 1 . 1 0 `S924 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES929  1 e 1 @1438 ]
 "6921
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @1439 ]
-[s S167 . 1 `uc 1 INTF 1 0 :1:0 
+[s S171 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "7782
-[u S172 . 1 `S167 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES172  1 e 1 @1804 ]
-[s S284 . 1 `uc 1 SSP1IF 1 0 :1:0 
+[u S176 . 1 `S171 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES176  1 e 1 @1804 ]
+[s S288 . 1 `uc 1 SSP1IF 1 0 :1:0 
 `uc 1 BCL1IF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TX1IF 1 0 :1:4 
@@ -387,28 +389,28 @@ channel_FVR_BUF2 63
 `uc 1 RC2IF 1 0 :1:7 
 ]
 "7890
-[u S292 . 1 `S284 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES292  1 e 1 @1807 ]
-[s S593 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S296 . 1 `S288 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES296  1 e 1 @1807 ]
+[s S597 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 ]
 "7936
-[u S596 . 1 `S593 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES596  1 e 1 @1808 ]
-[s S200 . 1 `uc 1 INTE 1 0 :1:0 
+[u S600 . 1 `S597 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES600  1 e 1 @1808 ]
+[s S204 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
 "8077
-[u S205 . 1 `S200 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES205  1 e 1 @1814 ]
-[s S584 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[u S209 . 1 `S204 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES209  1 e 1 @1814 ]
+[s S588 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 ]
 "8225
-[u S587 . 1 `S584 1 . 1 0 ]
-[v _PIE4bits PIE4bits `VES587  1 e 1 @1818 ]
+[u S591 . 1 `S588 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES591  1 e 1 @1818 ]
 "8353
 [v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
 "8398
@@ -433,6 +435,23 @@ channel_FVR_BUF2 63
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
 "9995
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"10146
+[v _FVRCON FVRCON `VEuc  1 e 1 @2316 ]
+[s S973 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"10167
+[s S980 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+]
+[u S985 . 1 `S973 1 . 1 0 `S980 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES985  1 e 1 @2316 ]
 "10979
 [v _RC2REG RC2REG `VEuc  1 e 1 @2585 ]
 "11017
@@ -444,11 +463,11 @@ channel_FVR_BUF2 63
 "11138
 [v _RC2STA RC2STA `VEuc  1 e 1 @2589 ]
 "11160
-[v _RC2STAbits RC2STAbits `VES333  1 e 1 @2589 ]
+[v _RC2STAbits RC2STAbits `VES337  1 e 1 @2589 ]
 "11260
 [v _TX2STA TX2STA `VEuc  1 e 1 @2590 ]
 "11282
-[v _TX2STAbits TX2STAbits `VES312  1 e 1 @2590 ]
+[v _TX2STAbits TX2STAbits `VES316  1 e 1 @2590 ]
 "11382
 [v _BAUD2CON BAUD2CON `VEuc  1 e 1 @2591 ]
 "15830
@@ -491,14 +510,14 @@ channel_FVR_BUF2 63
 [v _ADC_RES_dimmin_sens ADC_RES_dimmin_sens `us  1 e 2 0 ]
 "68
 [v _Dimm_Level Dimm_Level `us  1 e 2 0 ]
-[s S238 . 1 `uc 1 perr 1 0 :1:0 
+[s S242 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "52 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart1.c
-[u S243 . 1 `S238 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusart1RxLastError eusart1RxLastError `VES243  1 e 1 0 ]
+[u S247 . 1 `S242 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusart1RxLastError eusart1RxLastError `VES247  1 e 1 0 ]
 "58
 [v _EUSART1_FramingErrorHandler EUSART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
@@ -506,7 +525,7 @@ channel_FVR_BUF2 63
 "60
 [v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
 "52 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/eusart2.c
-[v _eusart2RxLastError eusart2RxLastError `VES243  1 e 1 0 ]
+[v _eusart2RxLastError eusart2RxLastError `VES247  1 e 1 0 ]
 "58
 [v _EUSART2_FramingErrorHandler EUSART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
@@ -542,7 +561,7 @@ channel_FVR_BUF2 63
 "50 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"62
+"63
 } 0
 "64 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
@@ -571,20 +590,25 @@ channel_FVR_BUF2 63
 {
 "70
 } 0
-"80 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
+"81 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
-"94
+"95
 } 0
 "55 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "112
 } 0
-"64 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
+"65 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"78
+"79
+} 0
+"58 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+{
+"62
 } 0
 "59 C:\GitHub\H34AUX03\H35AUX.X\mcc_generated_files/ext_int.c
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
