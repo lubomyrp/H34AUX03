@@ -58,6 +58,10 @@
 
 
 /*variables*/
+/*General*/
+#define TESTMODE;
+
+
 /*ADC*/
 uint16_t ADC_RES_pcbtype;       //pcb type adc reading result
 uint16_t ADC_RES_dimmin;        //emergency dimmer inp adc reading result
@@ -67,7 +71,8 @@ uint16_t ADC_RES_dimmin_sens;   //sensor dimmer inp adc reading result
 /*General variables*/
 uint16_t Dimm_Level;            // consolidated dimming level 
 
-uint16_t i;  //for tests
+uint16_t i=0,y=0;  //for tests
+bool up=true;
 
 
 
@@ -83,7 +88,39 @@ void T0_IH(void){
 PIR0bits.TMR0IF = 0;
 
   
+#ifdef TESTMODE
 
+if(y==0)
+{
+ y=50;
+   
+    if(up)
+    {
+        if(i<1022){ 
+            i++;
+            
+        }else
+        up=false;
+ 
+ 
+    }
+    else
+    {
+        if( i>1)
+        {
+            i--;
+
+        }else   up=true;
+
+    }
+}else{
+    
+    y--;
+
+};
+
+
+#endif
 
 };
 
@@ -122,6 +159,7 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
+   
     TMR0_SetInterruptHandler(T0_IH);
     TMR2_SetInterruptHandler(T2_IH);            
     TMR0_StartTimer();
@@ -136,6 +174,8 @@ void main(void)
 
 void DimToPWM(void)
 {
+#ifndef TESTMODE
+
     /*Take the least dimming level*/
     if(ADC_RES_dimmin<=ADC_RES_dimmin_sens){
         Dimm_Level=ADC_RES_dimmin;
@@ -149,6 +189,16 @@ void DimToPWM(void)
     
     /*Set the PWM level. it is same number of bits*/
     PWM3_LoadDutyValue(Dimm_Level);
+ 
+#endif
+
+#ifdef TESTMODE
+    
+    
+    PWM3_LoadDutyValue(i);
+   
+#endif
+
     
 };
 

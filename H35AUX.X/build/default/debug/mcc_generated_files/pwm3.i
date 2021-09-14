@@ -10965,7 +10965,7 @@ extern __bank0 __bit __timeout;
  {
 
 
-    PWM3CON = 0x80;
+    PWM3CON = 0x90;
 
 
     PWM3DCH = 0x7F;

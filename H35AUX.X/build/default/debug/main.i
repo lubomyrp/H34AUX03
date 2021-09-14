@@ -11373,7 +11373,7 @@ void OSCILLATOR_Initialize(void);
 # 104 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 45 "main.c" 2
-# 62 "main.c"
+# 66 "main.c"
 uint16_t ADC_RES_pcbtype;
 uint16_t ADC_RES_dimmin;
 uint16_t ADC_RES_dimmin_sens;
@@ -11382,7 +11382,7 @@ uint16_t ADC_RES_dimmin_sens;
 
 uint16_t Dimm_Level;
 
-uint16_t i;
+uint16_t i,y;
 
 
 
@@ -11396,6 +11396,15 @@ void DimToPWM(void);
 
 void T0_IH(void){
 PIR0bits.TMR0IF = 0;
+
+
+
+
+if(!y--){
+if(i>1023 || i<1) i=0;
+i++;
+ y=10;
+};
 
 
 
@@ -11430,13 +11439,7 @@ void main(void)
 
 
     (INTCONbits.PEIE = 1);
-
-
-
-
-
-
-
+# 139 "main.c"
     TMR0_SetInterruptHandler(T0_IH);
     TMR2_SetInterruptHandler(T2_IH);
     TMR0_StartTimer();
@@ -11451,19 +11454,11 @@ void main(void)
 
 void DimToPWM(void)
 {
-
-    if(ADC_RES_dimmin<ADC_RES_dimmin_sens){
-        Dimm_Level=ADC_RES_dimmin;
-
-    }else{
+# 174 "main.c"
+    PWM3_LoadDutyValue(i);
 
 
-        Dimm_Level=ADC_RES_dimmin;
 
-    };
-
-
-    PWM3_LoadDutyValue(Dimm_Level);
 
 };
 

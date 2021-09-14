@@ -1093,8 +1093,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/tmr2.c: 90:     TMR2_SetInterruptHandler(TMR2_DefaultInterruptHandler);
 [e ( _TMR2_SetInterruptHandler (1 &U _TMR2_DefaultInterruptHandler ]
 "93
-[; ;mcc_generated_files/tmr2.c: 93:     T2CON = 0xA0;
-[e = _T2CON -> -> 160 `i `uc ]
+[; ;mcc_generated_files/tmr2.c: 93:     T2CON = 0xB0;
+[e = _T2CON -> -> 176 `i `uc ]
 "94
 [; ;mcc_generated_files/tmr2.c: 94: }
 [e :UE 873 ]
