@@ -11397,42 +11397,7 @@ void DimToPWM(void);
 
 void T0_IH(void){
 PIR0bits.TMR0IF = 0;
-
-
-
-
-if(y==0)
-{
- y=50;
-
-    if(up)
-    {
-        if(i<1022){
-            i++;
-
-        }else
-        up=0;
-
-
-    }
-    else
-    {
-        if( i>1)
-        {
-            i--;
-
-        }else up=1;
-
-    }
-}else{
-
-    y--;
-
-};
-
-
-
-
+# 125 "main.c"
 };
 
 
@@ -11478,12 +11443,22 @@ void main(void)
 
 void DimToPWM(void)
 {
-# 198 "main.c"
-    PWM3_LoadDutyValue(i);
 
 
 
+    if(ADC_RES_dimmin<=ADC_RES_dimmin_sens){
+        Dimm_Level=ADC_RES_dimmin;
 
+    }else{
+
+
+        Dimm_Level=ADC_RES_dimmin_sens;
+
+    };
+
+
+    PWM3_LoadDutyValue(Dimm_Level);
+# 203 "main.c"
 };
 
 void AdcRead(void)

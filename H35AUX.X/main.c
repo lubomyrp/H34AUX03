@@ -59,7 +59,7 @@
 
 /*variables*/
 /*General*/
-#define TESTMODE;
+#define NOTESTMODE;               // if TESTMODE : test mode enabled
 
 
 /*ADC*/

@@ -508,11 +508,8 @@ channel_FVR_BUF2 63
 [v _ADC_RES_dimmin ADC_RES_dimmin `us  1 e 2 0 ]
 "68
 [v _ADC_RES_dimmin_sens ADC_RES_dimmin_sens `us  1 e 2 0 ]
-"74
-[v _i i `us  1 e 2 0 ]
-[v _y y `us  1 e 2 0 ]
-"75
-[v _up up `a  1 e 1 0 ]
+"72
+[v _Dimm_Level Dimm_Level `us  1 e 2 0 ]
 [s S242 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
